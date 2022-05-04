@@ -1,9 +1,11 @@
 import React from "react";
 import "flowbite";
 import { slideContent } from "../YummyData/index";
+import Modal from "../modals/modal";
 const slide2 = () => {
   return (
     <>
+      <Modal />
       <div id="default-carousel" className="relative" data-carousel="slide">
         {/* <!-- Carousel wrapper --> */}
         <div className="overflow-hidden relative h-80 sm:h-96 xl:h-96 2xl:h-96">
@@ -37,6 +39,7 @@ const slide2 = () => {
                   <div className="flex justify-center items-center">
                     <button
                       type="button"
+                      data-modal-toggle="authentication-modal"
                       className="m-6 px-6 py-3 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"
                     >
                       Donate Now !
