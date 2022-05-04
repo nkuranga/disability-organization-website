@@ -25,17 +25,15 @@ const slide2 = () => {
               </div>
               <div className="flex absolute top-1/2 left-2/4 -translate-x-1/2 -translate-y-1/2 ">
                 <div className="flex-row items-center justify-center  w-full">
-                  <div className="pl-16  w-full p-3 relative">
-                    <h1
-                      className="text-2xl text-center lg:text-5xl capitalize font-bold text-white"
-                      style={{ fontFamily: "Dancing Script" }}
-                    >
-                      {slide.title}
-                    </h1>
-                    <p className="text-center text-white lg:-ml-19">
-                      {slide.description}
-                    </p>
-                  </div>
+                  <h1
+                    className="text-2xl text-center lg:text-5xl capitalize font-bold text-white"
+                    style={{ fontFamily: "Playball" }}
+                  >
+                    {slide.title}
+                  </h1>
+                  <p className="text-center text-white font-semibold lg:-ml-19">
+                    {slide.description}
+                  </p>
                   <div className="flex justify-center items-center">
                     <button
                       type="button"
