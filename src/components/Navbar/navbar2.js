@@ -92,8 +92,8 @@ const navbar2 = () => {
                       href={url}
                       className={
                         link.indexOf("Home")
-                          ? "block  py-2 pr-4 lg:bg-transparent pl-3 lg:border-b-2 lg:border-transparent border-b border-gray-100  hover:border-blue-500  md:bg-transparent  md:p-0 dark:text-white"
-                          : "transition-colors duration-200 transform  lg:border-b-2 lg:border-blue-500 mx-1.5 sm:mx-6 cursor-pointer"
+                          ? "block  py-2 lg:bg-transparent pl-2 lg:border-b-2 lg:border-transparent border-b border-gray-100  hover:border-blue-500  md:bg-transparent  md:p-0 dark:text-white"
+                          : "transition-colors duration-200 transform lg:pl-0 lg:border-b-2 lg:border-blue-500 mx-1.5 sm:mx-6 cursor-pointer"
                       }
                       aria-current="page"
                     >
