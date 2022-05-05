@@ -79,7 +79,7 @@ const navbar2 = () => {
               className="hidden justify-between items-center w-full md:flex md:w-auto md:order-1"
               id="mobile-menu-2"
             >
-              <ul className="flex flex-col lg:font-extrabold uppercase mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium">
+              <ul className="flex flex-col lg:font-semibold uppercase mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium">
                 {[
                   ["Home", "/"],
                   ["About us", "/"],
@@ -93,7 +93,7 @@ const navbar2 = () => {
                       className={
                         link.indexOf("Home")
                           ? "block  py-2 pr-4 lg:bg-transparent pl-3 lg:border-b-2 lg:border-transparent border-b border-gray-100  hover:border-blue-500  md:bg-transparent  md:p-0 dark:text-white"
-                          : "transition-colors duration-200 transform  border-b-2 border-blue-500 mx-1.5 sm:mx-6 cursor-pointer"
+                          : "transition-colors duration-200 transform  lg:border-b-2 lg:border-blue-500 mx-1.5 sm:mx-6 cursor-pointer"
                       }
                       aria-current="page"
                     >
