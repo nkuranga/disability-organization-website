@@ -19,7 +19,7 @@ const aboutus = () => {
             <h1 class="font-extrabold uppercase text-transparent text-3xl bg-clip-text bg-gradient-to-r from-indigo-800 ">
               {aboutData.title}
             </h1>
-            <p className="mt-4 text-black ">{aboutData.description}</p>
+            <p className="mt-4 text-gray-500 ">{aboutData.description}</p>
 
             <div className="mt-8">
               <a

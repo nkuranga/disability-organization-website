@@ -3,7 +3,7 @@ import React from "react";
 const servicesCard = ({ service: { Icon, title, description } }) => {
   return (
     <div class="p-6 border rounded-xl border-r-gray-200 dark:border-gray-700">
-      <div class="md:flex md:items-start md:-mx-4">
+      <div class="md:flex md:items-start sm:flex md:-mx-4">
         <span class="inline-block p-2 text-white bg-gradient-to-r from-blue-400 to-blue-500 rounded-xl md:mx-4 dark:text-white dark:bg-blue-500">
           <Icon className="w-6 h-6" />
         </span>

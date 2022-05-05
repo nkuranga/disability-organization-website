@@ -79,7 +79,7 @@ const navbar2 = () => {
               className="hidden justify-between items-center w-full md:flex md:w-auto md:order-1"
               id="mobile-menu-2"
             >
-              <ul className="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium">
+              <ul className="flex flex-col font-extrabold uppercase mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium">
                 {[
                   ["Home", "/"],
                   ["About us", "/"],
