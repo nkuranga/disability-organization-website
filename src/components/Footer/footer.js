@@ -129,7 +129,7 @@ const footer = () => {
 
           <div>
             <p className="text-center text-gray-800 dark:text-white">
-              © Donate {year} - All rights reserved
+              © Brand {year} - All rights reserved
             </p>
           </div>
         </div>

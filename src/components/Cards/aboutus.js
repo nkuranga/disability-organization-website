@@ -1,5 +1,5 @@
 import React from "react";
-import { aboutData } from "../YummyData/";
+import { aboutData } from "../DummyData/";
 
 const aboutus = () => {
   return (
@@ -16,7 +16,7 @@ const aboutus = () => {
           </div>
 
           <div className="max-w-xl px-6 py-12 lg:max-w-5xl lg:w-1/2">
-            <h1 class="font-extrabold uppercase text-transparent text-3xl bg-clip-text bg-gradient-to-r from-indigo-800 ">
+            <h1 className="font-extrabold uppercase text-transparent text-3xl bg-clip-text bg-gradient-to-r from-indigo-800 ">
               {aboutData.title}
             </h1>
             <p className="mt-4 text-gray-500 ">{aboutData.description}</p>

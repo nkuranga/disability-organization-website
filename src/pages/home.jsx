@@ -8,7 +8,7 @@ import Aboutus from "../components/Cards/aboutus";
 import Footer from "../components/Footer/footer";
 import News from "../components/Cards/news";
 import Header from "../components/Headers/header";
-import ServicesCard from "../components/YummyData/services";
+import ServicesCard from "../components/DummyData/services";
 const home = () => {
   return (
     <>

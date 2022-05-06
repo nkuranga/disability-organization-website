@@ -1,5 +1,5 @@
 import React from "react";
-import { newsContent } from "../YummyData/";
+import { newsContent } from "../DummyData/";
 
 const news = () => {
   return (
@@ -8,13 +8,13 @@ const news = () => {
       <div className="container my-24 px-6 mx-auto">
         {/* <!-- Section: Design Block --> */}
         <section className="mb-12 text-center">
-          <h2 class="font-extrabold mb-12 uppercase text-transparent text-3xl bg-clip-text bg-gradient-to-r from-indigo-800 to-indigo-700 ">
+          <h2 className="font-extrabold mb-12 uppercase text-transparent text-3xl bg-clip-text bg-gradient-to-r from-indigo-800 to-indigo-700 ">
             Latest Activities
           </h2>
 
           <div className="grid lg:grid-cols-3 gap-6 xl:gap-x-12">
             {newsContent.map((news) => (
-              <div className="mb-0">
+              <div className="mb-0" key={news.id}>
                 <div className="relative block bg-white rounded-lg shadow-lg">
                   <div className="flex">
                     <div

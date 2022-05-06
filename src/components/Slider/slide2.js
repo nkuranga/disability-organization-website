@@ -1,6 +1,6 @@
 import React from "react";
 import "flowbite";
-import { slideContent } from "../YummyData/index";
+import { slideContent } from "../DummyData/index";
 import Modal from "../modals/modal";
 const slide2 = () => {
   return (
@@ -11,7 +11,11 @@ const slide2 = () => {
         <div className="overflow-hidden relative h-80 sm:h-96 xl:h-96 2xl:h-96">
           {/* <!-- Item 1 --> */}
           {slideContent.map((slide) => (
-            <div className="hidden duration-700 ease-in-out" data-carousel-item>
+            <div
+              className="hidden duration-700 ease-in-out"
+              data-carousel-item
+              key={slide.id}
+            >
               <div
                 className="w-full bg-center bg-cover h-[32rem]"
                 style={{
@@ -89,9 +93,9 @@ const slide2 = () => {
               xmlns="http://www.w3.org/2000/svg"
             >
               <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
                 d="M15 19l-7-7 7-7"
               ></path>
             </svg>
@@ -112,9 +116,9 @@ const slide2 = () => {
               xmlns="http://www.w3.org/2000/svg"
             >
               <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
                 d="M9 5l7 7-7 7"
               ></path>
             </svg>
