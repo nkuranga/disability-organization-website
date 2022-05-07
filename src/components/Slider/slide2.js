@@ -2,6 +2,7 @@ import React from "react";
 import "flowbite";
 import { slideContent } from "../DummyData/index";
 import Modal from "../modals/modal";
+import "./caption.css";
 const slide2 = () => {
   return (
     <>
@@ -20,7 +21,6 @@ const slide2 = () => {
                 className="w-full bg-center bg-cover h-[32rem]"
                 style={{
                   backgroundImage: `url(${slide.img})`,
-                  backgroundColor: `rgba(0,0,0,0.4)`,
                 }}
               >
                 {/* <img
@@ -31,15 +31,17 @@ const slide2 = () => {
               </div>
               <div className="flex absolute top-1/2 left-2/4 -translate-x-1/2 -translate-y-1/2 ">
                 <div className="flex-row items-center justify-center  w-full">
-                  <h1
-                    className="text-2xl text-center lg:text-5xl capitalize font-bold text-white"
-                    style={{ fontFamily: "Playball" }}
-                  >
-                    {slide.title}
-                  </h1>
-                  <p className="text-center text-white font-semibold lg:-ml-19">
-                    {slide.description}
-                  </p>
+                  <div className="caption">
+                    <h1
+                      className="text-2xl text-center relative lg:p-2 lg:text-5xl capitalize font-extrabold "
+                      style={{ fontFamily: "Playball" }}
+                    >
+                      {slide.title}
+                    </h1>
+                    <p className="text-center font-semibold relative lg:p-2 lg:-ml-19">
+                      {slide.description}
+                    </p>
+                  </div>
                   <div className="flex justify-center items-center">
                     <button
                       type="button"

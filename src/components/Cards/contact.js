@@ -10,7 +10,7 @@ const contact = () => {
           style={{
             backgroundPosition: "50%",
             backgroundImage: `url('https://www.unicef.org/zimbabwe/sites/unicef.org.zimbabwe/files/styles/hero_mobile/public/WG9P5540.JPG?itok=2AiBPBOb')`,
-            height: "300px",
+            height: "250px",
           }}
         >
           <div className="text-white flex justify-center items-center mt-20">
@@ -21,7 +21,7 @@ const contact = () => {
           <div
             className="block rounded-lg shadow-lg py-10 md:py-12 px-4 md:px-6"
             style={{
-              marginTop: "-100px",
+              marginTop: "-80px",
               background: `hsla(0, 0%, 100%, 0.8)`,
               backdropFilter: `blur(20px)`,
             }}

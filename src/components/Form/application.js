@@ -2,166 +2,225 @@ import React from "react";
 
 const application = () => {
   return (
-    <div>
-      <section className="vh-100 gradient-custom">
-        <div className="container py-5 h-100">
-          <div className="row justify-content-center align-items-center h-100">
-            <div className="col-12 col-lg-9 col-xl-7">
-              <div
-                className="card shadow-2-strong card-registration"
-                style={{ borderRadius: "15px" }}
-              >
-                <div className="card-body p-4 p-md-5">
-                  <h3 className="mb-4 pb-2 pb-md-0 mb-md-5">
-                    Registration Form
-                  </h3>
-                  <form>
-                    <div className="row">
-                      <div className="col-md-6 mb-4">
-                        <div className="form-outline">
-                          <input
-                            type="text"
-                            id="firstName"
-                            className="form-control form-control-lg"
-                          />
-                          <label className="form-label" for="firstName">
-                            First Name
-                          </label>
-                        </div>
-                      </div>
-                      <div className="col-md-6 mb-4">
-                        <div className="form-outline">
-                          <input
-                            type="text"
-                            id="lastName"
-                            className="form-control form-control-lg"
-                          />
-                          <label className="form-label" for="lastName">
-                            Last Name
-                          </label>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div className="row">
-                      <div className="col-md-6 mb-4 d-flex align-items-center">
-                        <div className="form-outline datepicker w-100">
-                          <input
-                            type="text"
-                            className="form-control form-control-lg"
-                            id="birthdayDate"
-                          />
-                          <label for="birthdayDate" className="form-label">
-                            Birthday
-                          </label>
-                        </div>
-                      </div>
-                      <div className="col-md-6 mb-4">
-                        <h6 className="mb-2 pb-1">Gender: </h6>
-
-                        <div className="form-check form-check-inline">
-                          <input
-                            className="form-check-input"
-                            type="radio"
-                            name="inlineRadioOptions"
-                            id="femaleGender"
-                            value="option1"
-                            checked
-                          />
-                          <label
-                            className="form-check-label"
-                            for="femaleGender"
-                          >
-                            Female
-                          </label>
-                        </div>
-
-                        <div className="form-check form-check-inline">
-                          <input
-                            className="form-check-input"
-                            type="radio"
-                            name="inlineRadioOptions"
-                            id="maleGender"
-                            value="option2"
-                          />
-                          <label className="form-check-label" for="maleGender">
-                            Male
-                          </label>
-                        </div>
-
-                        <div className="form-check form-check-inline">
-                          <input
-                            className="form-check-input"
-                            type="radio"
-                            name="inlineRadioOptions"
-                            id="otherGender"
-                            value="option3"
-                          />
-                          <label className="form-check-label" for="otherGender">
-                            Other
-                          </label>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div className="row">
-                      <div className="col-md-6 mb-4 pb-2">
-                        <div className="form-outline">
-                          <input
-                            type="email"
-                            id="emailAddress"
-                            className="form-control form-control-lg"
-                          />
-                          <label className="form-label" for="emailAddress">
-                            Email
-                          </label>
-                        </div>
-                      </div>
-                      <div className="col-md-6 mb-4 pb-2">
-                        <div className="form-outline">
-                          <input
-                            type="tel"
-                            id="phoneNumber"
-                            className="form-control form-control-lg"
-                          />
-                          <label className="form-label" for="phoneNumber">
-                            Phone Number
-                          </label>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div className="row">
-                      <div className="col-12">
-                        <select className="select form-control-lg">
-                          <option value="1" disabled>
-                            Choose option
-                          </option>
-                          <option value="2">Subject 1</option>
-                          <option value="3">Subject 2</option>
-                          <option value="4">Subject 3</option>
-                        </select>
-                        <label className="form-label select-label">
-                          Choose option
-                        </label>
-                      </div>
-                    </div>
-
-                    <div className="mt-4 pt-2">
-                      <input
-                        className="btn btn-primary btn-lg"
-                        type="submit"
-                        value="Submit"
-                      />
-                    </div>
-                  </form>
-                </div>
-              </div>
-            </div>
+    <>
+      <section className="mb-32 text-gray-800">
+        <div
+          className="relative overflow-hidden bg-no-repeat bg-cover"
+          style={{
+            backgroundPosition: "50%",
+            backgroundImage: `url('https://www.unicef.org/zimbabwe/sites/unicef.org.zimbabwe/files/styles/hero_mobile/public/WG9P5540.JPG?itok=2AiBPBOb')`,
+            height: "250px",
+          }}
+        >
+          <div className="text-white flex justify-center items-center mt-20 m-3">
+            <h1 className="font-extrabold text-3xl uppercase ">Application</h1>
           </div>
         </div>
+        <div
+          className="max-w-6xl relative p-6 mx-auto mb-10 bg-white rounded-md shadow-md dark:bg-gray-800"
+          style={{ marginTop: "-100px" }}
+        >
+          <h2 className="text-lg font-semibold text-gray-700 text-center uppercase dark:text-white">
+            Application Details
+          </h2>
+
+          <form>
+            <div className="grid grid-cols-1 gap-6 mt-4 sm:grid-cols-2">
+              <div>
+                <label
+                  className="text-gray-700 dark:text-gray-200"
+                  htmlFor="firstName"
+                >
+                  First Name
+                </label>
+                <input
+                  id="firstName"
+                  type="text"
+                  placeholder="First Name"
+                  className="form-control block
+                  w-full
+                  px-3
+                  py-1.5
+                  text-base
+                  font-normal
+                  text-gray-700
+                  bg-white bg-clip-padding
+                  border border-solid border-gray-300
+                  rounded
+                  transition
+                  ease-in-out
+                  m-0
+                  focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
+                />
+              </div>
+
+              <div>
+                <label
+                  className="text-gray-700 dark:text-gray-200"
+                  htmlFor="lastName"
+                >
+                  Last Name
+                </label>
+                <input
+                  id="lastName"
+                  type="text"
+                  placeholder="Last Name"
+                  className="form-control block
+                  w-full
+                  px-3
+                  py-1.5
+                  text-base
+                  font-normal
+                  text-gray-700
+                  bg-white bg-clip-padding
+                  border border-solid border-gray-300
+                  rounded
+                  transition
+                  ease-in-out
+                  m-0
+                  focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
+                />
+              </div>
+
+              <div>
+                <label
+                  className="text-gray-700 dark:text-gray-200"
+                  htmlFor="Email"
+                >
+                  Email
+                </label>
+                <input
+                  id="password"
+                  type="password"
+                  placeholder="Enter Email"
+                  className="form-control block
+                  w-full
+                  px-3
+                  py-1.5
+                  text-base
+                  font-normal
+                  text-gray-700
+                  bg-white bg-clip-padding
+                  border border-solid border-gray-300
+                  rounded
+                  transition
+                  ease-in-out
+                  m-0
+                  focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
+                />
+              </div>
+
+              <div>
+                <label
+                  className="text-gray-700 dark:text-gray-200"
+                  htmlFor="phone"
+                >
+                  Phone
+                </label>
+                <input
+                  id="passwordConfirmation"
+                  type="password"
+                  placeholder="Enter Phone Number"
+                  className="form-control block
+                  w-full
+                  px-3
+                  py-1.5
+                  text-base
+                  font-normal
+                  text-gray-700
+                  bg-white bg-clip-padding
+                  border border-solid border-gray-300
+                  rounded
+                  transition
+                  ease-in-out
+                  m-0
+                  focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
+                />
+              </div>
+              <div>
+                <label
+                  className="text-gray-700 dark:text-gray-200"
+                  htmlFor="Email"
+                >
+                  Email
+                </label>
+                <input
+                  id="password"
+                  type="password"
+                  placeholder="Enter Email"
+                  className="form-control block
+                  w-full
+                  px-3
+                  py-1.5
+                  text-base
+                  font-normal
+                  text-gray-700
+                  bg-white bg-clip-padding
+                  border border-solid border-gray-300
+                  rounded
+                  transition
+                  ease-in-out
+                  m-0
+                  focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
+                />
+              </div>
+
+              <div>
+                <label
+                  className="text-gray-700 dark:text-gray-200"
+                  htmlFor="phone"
+                >
+                  Phone
+                </label>
+                <input
+                  id="passwordConfirmation"
+                  type="password"
+                  placeholder="Enter Phone Number"
+                  className="form-control block
+                  w-full
+                  px-3
+                  py-1.5
+                  text-base
+                  font-normal
+                  text-gray-700
+                  bg-white bg-clip-padding
+                  border border-solid border-gray-300
+                  rounded
+                  transition
+                  ease-in-out
+                  m-0
+                  focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
+                />
+              </div>
+            </div>
+
+            <div className="flex justify-end mt-6">
+              <button
+                className="w-full
+            px-6
+            py-2.5
+            bg-blue-600
+            text-white
+            font-medium
+            text-xs
+            leading-tight
+            uppercase
+            rounded-full
+            shadow-md
+            hover:bg-blue-700 hover:shadow-lg
+            focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0
+            active:bg-blue-800 active:shadow-lg
+            transition
+            duration-150
+            ease-in-out"
+              >
+                Submit Details
+              </button>
+            </div>
+          </form>
+        </div>
       </section>
-    </div>
+    </>
   );
 };
 

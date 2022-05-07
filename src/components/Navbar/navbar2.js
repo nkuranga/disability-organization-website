@@ -17,6 +17,11 @@ const navbar2 = () => {
       marginTop: `20px`,
     },
   };
+  const menu = {
+    "@media (max-width: 600px)": {
+      backgroundColor: ``,
+    },
+  };
   return (
     <>
       <StyleRoot>
@@ -32,13 +37,13 @@ const navbar2 = () => {
               <span className="ml-3 text-xl">Donate</span>
             </a>
             <div className="flex items-center md:order-2">
-              <button
-                className="ml-35 px-2 mr-5 p-2 pr-3 rounded flex justify-between items-center bg-indigo-500 hborder-indigo-500 text-white"
+              <a
+                href="/application"
+                className="ml-35 px-2 mr-5 p-2 pr-3  rounded flex justify-between items-center bg-indigo-500 hborder-indigo-500 text-white"
                 style={donateBtn}
-                data-modal-toggle="authentication-modal"
               >
                 Apply
-              </button>
+              </a>
               <button
                 className="ml-35 px-2 bg-transparent border-2 border-yellow-500 p-2 pr-3 rounded animate-bounce flex justify-between items-center hover:bg-indigo-500 hover:border-indigo-500 hover:text-white"
                 style={donateBtn}
@@ -55,7 +60,7 @@ const navbar2 = () => {
                 aria-controls="mobile-menu-2"
                 aria-expanded="false"
               >
-                <span className="sr-only">Open main menu</span>
+                <span className="sr-only">Mobile Menu</span>
                 <svg
                   className="w-6 h-6"
                   fill="currentColor"
@@ -83,7 +88,7 @@ const navbar2 = () => {
               </button>
             </div>
             <div
-              className="hidden justify-between items-center w-full md:flex md:w-auto md:order-1"
+              className="hidden lg:bg-none justify-between items-center w-full md:flex md:w-auto md:order-1"
               id="mobile-menu-2"
             >
               <ul className="flex flex-col lg:font-semibold uppercase mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium">
@@ -99,8 +104,8 @@ const navbar2 = () => {
                       href={url}
                       className={
                         link.indexOf("Home")
-                          ? "block  py-2 lg:bg-transparent pl-2 lg:border-b-2 lg:border-transparent border-b border-gray-100  hover:border-blue-500  md:bg-transparent  md:p-0 dark:text-white"
-                          : "transition-colors duration-200 transform lg:pl-0 lg:border-b-2 lg:border-blue-500 mx-1.5 sm:mx-6 cursor-pointer"
+                          ? "block  py-2 lg:bg-transparent pl-2 lg:border-b-2 lg:border-transparent border-b border-gray-200  hover:border-blue-500  md:bg-transparent  md:p-0 dark:text-white"
+                          : "block  py-2 lg:bg-transparent pl-2 lg:border-b-2 lg:border-blue-500 border-b border-gray-200  hover:border-blue-500  md:bg-transparent  md:p-0 dark:text-white"
                       }
                       aria-current="page"
                     >
